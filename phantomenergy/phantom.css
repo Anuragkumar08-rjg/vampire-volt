@@ -99,3 +99,266 @@ nav a:hover {
   font-size: 40px;
   color: #22c55e;
 }
+/* Footer */
+.footer {
+  background: #020617;
+  padding: 40px 20px;
+  margin-top: 40px;
+  border-top: 1px solid #1e293b;
+  text-align: center;
+}
+
+.footer-content {
+  max-width: 800px;
+  margin: auto;
+}
+
+.team-name {
+  color: #22c55e;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.tagline {
+  color: #94a3b8;
+  margin-bottom: 20px;
+}
+
+.team-members span {
+  display: block;
+  margin-bottom: 10px;
+  color: #e2e8f0;
+}
+
+.team-members ul {
+  list-style: none;
+  padding: 0;
+}
+
+.team-members li {
+  color: #94a3b8;
+  margin: 5px 0;
+}
+
+.footer p {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #64748b;
+}
+.team-name:hover {
+  text-shadow: 0 0 10px #22c55e;
+}
+canvas {
+  filter: drop-shadow(0 0 8px rgba(34,197,94,0.3));
+}
+.settings-card {
+  margin-top: 20px;
+}
+
+/* Setting row */
+.setting-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px 0;
+}
+
+/* Toggle Switch */
+.switch {
+  position: relative;
+  width: 50px;
+  height: 25px;
+}
+
+.switch input {
+  display: none;
+}
+
+.slider {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #374151;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.slider::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: white;
+  border-radius: 50%;
+  top: 2.5px;
+  left: 4px;
+  transition: 0.3s;
+}
+
+input:checked + .slider {
+  background: #22c55e;
+}
+
+input:checked + .slider::before {
+  transform: translateX(24px);
+}
+
+/* Range Slider */
+input[type="range"] {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.range-labels {
+  display: flex;
+  justify-content: space-between;
+  color: #64748b;
+  font-size: 12px;
+}
+
+/* Dropdown */
+.dropdown {
+  background: #020617;
+  color: white;
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid #334155;
+}
+
+/* Danger Zone */
+.danger {
+  border: 1px solid rgba(255,0,0,0.3);
+}
+
+.danger h3 {
+  color: #ef4444;
+}
+
+.danger-btn {
+  background: transparent;
+  border: 1px solid red;
+  color: red;
+  padding: 6px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.danger-btn:hover {
+  background: rgba(255,0,0,0.1);
+}
+nav a.active {
+  color: #22c55e;
+  font-weight: bold;
+}
+.sub {
+  color: #94a3b8;
+  margin-bottom: 20px;
+}
+
+/* Glow cards */
+.glow {
+  border: 1px solid rgba(34,197,94,0.2);
+  box-shadow: 0 0 20px rgba(34,197,94,0.05);
+}
+
+/* Trend colors */
+.green {
+  color: #22c55e;
+}
+
+.red {
+  color: #ef4444;
+}
+
+/* Chart box */
+.chart-box {
+  margin-top: 20px;
+  padding: 20px;
+  background: linear-gradient(145deg, #0f172a, #020617);
+  border-radius: 16px;
+}
+
+/* Flex layout */
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Legend */
+.legend {
+  margin-left: 20px;
+}
+
+.legend p {
+  margin: 10px 0;
+  color: #cbd5f5;
+}
+
+.dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.dot.green { background: #22c55e; }
+.dot.blue { background: #06b6d4; }
+.dot.yellow { background: #facc15; }
+.dot.red { background: #ef4444; }
+
+select, input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  background: #0f172a;
+  color: white;
+  border: 1px solid #334155;
+  border-radius: 8px;
+}
+
+button {
+  padding: 10px;
+  background: #22c55e;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background: #16a34a;
+}
+
+#deviceList {
+  margin-top: 10px;
+}
+
+#deviceList li {
+  margin: 5px 0;
+  color: #94a3b8;
+}
+.device-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.device-list label {
+  background: #0f172a;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  border: 1px solid #334155;
+  transition: 0.2s;
+}
+
+.device-list label:hover {
+  border-color: #22c55e;
+}
+
+.device-list input {
+  margin-right: 8px;
+}

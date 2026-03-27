@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Phantom Calculator</title>
+  <link rel="stylesheet" href="./phantom.css">
+</head>
+<body>
+
+<header class="navbar">
+  <div class="logo">⚡ VAMPIREVOLT</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="reports.html">Reports</a>
+    <a class="active" href="calculator.html">Calculator</a>
+    <a href="settings.html">Settings</a>
+  </nav>
+</header>
+
+<section class="dashboard">
+
+  <h1>⚡ Phantom Energy Calculator</h1>
+
+  <!-- Device Selection -->
+ <div class="card">
+  <h3>Select Devices</h3>
+
+  <div class="device-list">
+
+    <label><input type="checkbox" value="fan"> Fan (75W)</label>
+    <label><input type="checkbox" value="bulb"> Bulb (10W)</label>
+    <label><input type="checkbox" value="tv"> TV (100W)</label>
+    <label><input type="checkbox" value="router"> Router (15W)</label>
+    <label><input type="checkbox" value="charger"> Charger (5W)</label>
+    <label><input type="checkbox" value="microwave"> Microwave (1200W)</label>
+
+  </div>
+</div>
+
+  <!-- Input -->
+  <div class="card">
+    <h3>Energy Input</h3>
+
+    <label>Hours used per day</label>
+    <input type="number" id="hours" placeholder="e.g. 5">
+
+    <label>Electricity Rate (₹/kWh)</label>
+    <input type="number" id="rate" placeholder="e.g. 8">
+
+    <button onclick="calculate()">Calculate</button>
+  </div>
+
+  <!-- Result -->
+  <div class="card">
+    <h3>Result</h3>
+    <div id="result"></div>
+  </div>
+
+  <!-- AI Advisor -->
+  <div class="card">
+    <h3>🤖 AI Advisor</h3>
+    <div id="advice"></div>
+  </div>
+
+</section>
+
+<script src="./phantom.js"></script>
+</body>
+</html>

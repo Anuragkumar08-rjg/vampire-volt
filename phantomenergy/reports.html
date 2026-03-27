@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Reports - VampireVolt</title>
+  <link rel="stylesheet" href="./phantom.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<header class="navbar">
+  <div class="logo">⚡ VAMPIREVOLT</div>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a class="active" href="reports.html">Reports</a>
+     <a class="active" href="calculator.html">Calculator</a>
+    <a href="settings.html">Settings</a>
+  </nav>
+
+  <button class="profile-btn">Profile</button>
+</header>
+
+<section class="dashboard">
+
+  <h1>📊 USAGE REPORT</h1>
+  <p class="sub">Detailed breakdown of your energy consumption</p>
+
+  <!-- Top Cards -->
+  <div class="cards">
+
+    <div class="card glow">
+      <h4>This Week</h4>
+      <p class="big">36.7 kWh</p>
+      <span class="green">↓ -8%</span>
+    </div>
+
+    <div class="card glow">
+      <h4>Monthly Cost</h4>
+      <p class="big">$42.50</p>
+      <span class="red">↑ +3%</span>
+    </div>
+
+    <div class="card glow">
+      <h4>Avg Daily</h4>
+      <p class="big">5.24 kWh</p>
+      <span class="green">↓ -12%</span>
+    </div>
+
+  </div>
+
+  <!-- Weekly Chart -->
+  <div class="chart-box">
+    <h3>Weekly Consumption</h3>
+    <canvas id="weeklyChart"></canvas>
+  </div>
+
+  <!-- Monthly Chart -->
+  <div class="chart-box">
+    <h3>Monthly Trend</h3>
+    <canvas id="monthlyChart"></canvas>
+  </div>
+
+  <!-- Pie Chart -->
+  <div class="chart-box flex">
+    <div>
+      <h3>Energy Breakdown</h3>
+      <canvas id="pieChart"></canvas>
+    </div>
+
+    <div class="legend">
+      <p><span class="dot green"></span> HVAC 40%</p>
+      <p><span class="dot blue"></span> Lighting 20%</p>
+      <p><span class="dot yellow"></span> Appliances 25%</p>
+      <p><span class="dot red"></span> Phantom 15%</p>
+    </div>
+  </div>
+
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="./phantom.js"></script>
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Settings - VampireVolt</title>
+  <link rel="stylesheet" href="./phantom.css">
+  
+</head>
+<body>
+
+<!-- Navbar -->
+<header class="navbar">
+  <div class="logo">
+    <span>⚡ VAMPIREVOLT</span>
+  </div>
+
+  <nav>
+    <a href="./index.html">Home</a>
+    <a href="./reports.html">Reports</a>
+    <a class="active" href="calculator.html">Calculator</a>
+    <a class="active" href="./settings.html">Settings</a>
+  </nav>
+
+  <button class="profile-btn">Profile</button>
+</header>
+
+<!-- Settings Page -->
+<section class="dashboard">
+
+  <h1>⚙️ SETTINGS</h1>
+
+  <!-- Appearance -->
+  <div class="card settings-card">
+    <h3>Appearance</h3>
+    <div class="setting-row">
+      <div>
+        <strong>Dark Mode</strong>
+        <p>Switch between light and dark themes</p>
+      </div>
+      <label class="switch">
+        <input type="checkbox" checked>
+        <span class="slider"></span>
+      </label>
+    </div>
+  </div>
+
+  <!-- Notifications -->
+  <div class="card settings-card">
+    <h3>Notifications</h3>
+
+    <div class="setting-row">
+      <div>
+        <strong>Push Notifications</strong>
+        <p>Get notified about energy usage</p>
+      </div>
+      <label class="switch">
+        <input type="checkbox" checked>
+        <span class="slider"></span>
+      </label>
+    </div>
+
+    <div class="setting-row">
+      <div>
+        <strong>Phantom Load Alerts</strong>
+        <p>Alert when devices draw standby power</p>
+      </div>
+      <label class="switch">
+        <input type="checkbox" checked>
+        <span class="slider"></span>
+      </label>
+    </div>
+  </div>
+
+  <!-- Energy Target -->
+  <div class="card settings-card">
+    <h3>Energy Target</h3>
+
+    <p>Daily target: <span id="targetValue">5</span> kWh</p>
+
+    <input type="range" min="1" max="20" value="5" id="rangeSlider">
+
+    <div class="range-labels">
+      <span>1 kWh</span>
+      <span>20 kWh</span>
+    </div>
+  </div>
+
+  <!-- Preferences -->
+  <div class="card settings-card">
+    <h3>Preferences</h3>
+
+    <div class="setting-row">
+      <strong>Currency</strong>
+
+      <select class="dropdown">
+        <option>USD ($)</option>
+        <option>INR (₹)</option>
+        <option>EUR (€)</option>
+      </select>
+    </div>
+  </div>
+
+  <!-- Danger Zone -->
+  <div class="card danger">
+    <h3>Danger Zone</h3>
+
+    <div class="setting-row">
+      <span>Delete all usage data</span>
+      <button class="danger-btn">DELETE</button>
+    </div>
+
+    <div class="setting-row">
+      <span>Deactivate account</span>
+      <button class="danger-btn">DEACTIVATE</button>
+    </div>
+  </div>
+
+</section>
+
+<script src="./phantom.js"></script>
+</body>
+</html>
