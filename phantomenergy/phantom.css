@@ -1,178 +1,101 @@
-*{
-    padding: 0%;
-    margin: 0%;
-    box-sizing: border-box;
-    font-family: "Inter",sans-serif ;
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0b1220;
+  color: #fff;
 }
 
-nav{
-    height: 90px;
-    display: flex;
-    justify-content: space-evenly;
-}
-nav ol{
-    display: flex;
-    list-style: none;
-    /* border: epx solid red; */
-    width: 700px;
-    justify-content: space-between;
-    font-size: 18px;
-    font-weight: 600px;
-    color: #282828;
-}
-nav img{
-    height: 70px;
-    width: 160px;
-}
-nav div:nth-child(2){
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    width: 800px;
-}
-nav div:nth-child{
-    width: 150px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-nav button{
-    margin-top: 15px;
-    width: 146px ;
-    height: 55px;
-    background-color: white;
-    font-size: 18px;
-    font-weight: 600px;
-    border-radius: 5px;
-    border: 1px solid black;
-}
-nav button:hover{
-    background-color: rgb(11, 98, 12);
-    color: white;
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: #0f172a;
 }
 
-main{
-    /* border: 2px solid red; */
-    height: 680px;
-    display: flex;
-    justify-content: center;
-    gap: 50px;
-}
-main div{
-    /* border: 2px solid green; */
-    height: 650px;
-    width: 35%;
-}
-main img{
-    width: 100%;
-    height: 640px;
-}
-main div+div{
-    width: 50%;
-}
-main h1{
-    font-size: 60px;
-}
-main div p{
-    font-size: 20px;
-    color:rgb(86, 80, 89);
-}
-main button{
-    width: 40%;
-    height: 60px;
-    font-size: 20px;
-    background-color: black;
-    color: white;
-    border: none;
-    border-radius: 5px;
-}
-main section{
-    display: flex;
-    width: 80%;
-    /* border: 2px solid ; */
-    justify-content: center;
-    gap: 40px;
-    height: 250px;
-    align-items: center;
-}
-main article{
-    width: 50%;
-    /* border: 2px solid green; */
-}
-main div:first-child{
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-}
-main h2{
-    font-size: 35px;
-}
-#sec1{
-    height: 600px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 4%;
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
-#sec1 div{
-    height: 560px;
-    width: 28%;
-    border-radius: 10px;
-    text-align: center;
-    background-color: #2ccf6b;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    padding: 15px;
-    transition: 0.3s;
+.logo img {
+  width: 30px;
 }
 
-/* Hover Effect */
-#sec1 div:hover{
-    transform: translateY(-10px);
-    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+nav a {
+  margin: 0 15px;
+  color: #94a3b8;
+  text-decoration: none;
 }
 
-/* Headings */
-#sec1 h1{
-    font-size: 28px;
+nav a:hover {
+  color: #22c55e;
 }
 
-#sec1 h3{
-    color: #2e7d32;
+.profile-btn {
+  background: #1e293b;
+  border: none;
+  padding: 8px 15px;
+  color: white;
+  border-radius: 8px;
 }
 
-/* Images */
-#sec1 img{
-    height: 150px;
-    width: 150px;
+/* Dashboard */
+.dashboard {
+  padding: 20px;
 }
 
-/* Buttons container */
-#sec1 article{
-    height: auto;
-    width: 100%;
+.cards {
+  display: flex;
+  gap: 20px;
 }
 
-/* Buttons */
-#sec1 button{
-    border-radius: 5px;
-    height: 35px;
-    padding: 5px 10px;
-    background-color: #2e7d32;
-    border: none;
-    color: white;
-    margin: 5px;
-    font-size: 12px;
+.card {
+  background: #111827;
+  padding: 20px;
+  border-radius: 15px;
+  flex: 1;
 }
 
-/* Different shades */
-#sec1 div:nth-child(2) button{
-    background-color: #388e3c;
+.big {
+  font-size: 28px;
+  color: #22c55e;
 }
 
-#sec1 div:nth-child(3) button{
-    background-color: #1b5e20;
+.chart-box {
+  margin-top: 20px;
+  background: #111827;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.grid {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.streak span {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background: #374151;
+  border-radius: 50%;
+  margin: 5px;
+}
+
+.streak .active {
+  background: #22c55e;
+}
+
+.center {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.score {
+  font-size: 40px;
+  color: #22c55e;
 }

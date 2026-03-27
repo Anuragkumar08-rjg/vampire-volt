@@ -1,123 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./phantom.css">
+  <meta charset="UTF-8">
+  <title>VampireVolt Dashboard</title>
+  <link rel="stylesheet" href="./phantom.css">
 </head>
 <body>
-    <nav>
-        <div>
-            <img src=".//assets/Gemini_Generated_Image_71sviv71sviv71sv.png" alt="">
-        </div>
-        <div>
-            <ol>
-                <li>Home<i class="ri-arrow-drop-down-line"></i></li>
-                <li>Calculator<i class="ri-arrow-drop-down-line"></i></li>
-                <li>profile<i class="ri-arrow-drop-down-line"></i></li>
-               
-            </ol>
-        </div>
-        <div>
-            <button>About us</button>
-        </div>
-    </nav>
-    <main>
-<br><br><br><br><br>
-    <!-- LEFT SIDE -->
-    <div>
-        <h1>Stop Wasting Electricity ⚡</h1>
 
-        <p>
-            Calculate hidden energy costs of your appliances and save money while protecting the environment.
-        </p>
+<!-- Navbar -->
+<header class="navbar">
+  <div class="logo">
+    <img src="assets/logo.png" alt="logo">
+    <span>VAMPIREVOLT</span>
+  </div>
 
-        <a href="calculator.html">
-            <button>Start Calculating</button>
-        </a>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Usage</a>
+    <a href="#">AI Advisor</a>
+    <a href="#">Reports</a>
+    <a href="#">Settings</a>
+  </nav>
 
-        <section>
-            <article>
-                <h2>₹500+</h2>
-                <p>Average Yearly Waste</p>
-            </article>
+  <button class="profile-btn">Profile</button>
+</header>
 
-            <article>
-                <h2>30%</h2>
-                <p>Energy Saved Possible</p>
-            </article>
-        </section>
+<!-- Dashboard -->
+<section class="dashboard">
+
+  <h1>DASHBOARD</h1>
+
+  <!-- Cards -->
+  <div class="cards">
+    <div class="card">
+      <h3>Current Usage</h3>
+      <p class="big">5.4 kWh</p>
+      <span>Est. Cost Today: $1.08</span>
     </div>
 
-    <!-- RIGHT SIDE -->
-    <div>
-        <img src="https://cdn-icons-png.flaticon.com/512/3103/3103446.png" alt="energy">
+    <div class="card">
+      <h3>Monthly Usage</h3>
+      <p class="big">120 kWh</p>
+      <span>Est. Cost: $24.00</span>
+    </div>
+  </div>
+
+  <!-- Chart -->
+  <div class="chart-box">
+    <h3>Usage Chart</h3>
+    <canvas id="chart"></canvas>
+  </div>
+
+  <!-- AI + Streak -->
+  <div class="grid">
+    <div class="card">
+      <h3>AI Advisor</h3>
+      <ul>
+        <li>Energy-saving advice</li>
+        <li>Identify phantom devices</li>
+        <li>Personalized recommendations</li>
+      </ul>
     </div>
 
-</main>
-<section id="sec1">
-
-    <!-- Card 1 -->
-    <div>
-        <h3>Energy Cost</h3><br>
-        <h1>Calculate Electricity Cost</h1>
-
-        <img src="https://cdn-icons-png.flaticon.com/512/2331/2331943.png" alt="cost">
-
-        <br>
-
-        <article>
-            <button>Annual Cost</button>
-            <button>Units Used</button>
-        </article>
-
-        <article>
-            <button>Real Estimate</button>
-            <button>Easy Input</button>
-        </article>
+    <div class="card">
+      <h3>Energy Streak</h3>
+      <div class="streak">
+        <span class="active"></span>
+        <span class="active"></span>
+        <span class="active"></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </div>
+  </div>
 
-    <!-- Card 2 -->
-    <div>
-        <h3>Energy Usage</h3><br>
-        <h1>Track Power Consumption</h1>
-
-        <img src="https://cdn-icons-png.flaticon.com/512/3103/3103446.png" alt="energy">
-
-        <br>
-
-        <article>
-            <button>Standby Mode</button>
-            <button>Daily Usage</button>
-            <button>Monitoring</button>
-        </article>
-
-        <article>
-            <button>Smart Tracking</button>
-        </article>
-    </div>
-
-    <!-- Card 3 -->
-    <div>
-        <h3>Eco Impact</h3><br>
-        <h1>Reduce Carbon Footprint</h1>
-
-        <img src="https://cdn-icons-png.flaticon.com/512/4149/4149675.png" alt="eco">
-
-        <br>
-
-        <article>
-            <button>CO₂ Emission</button>
-            <button>Save Energy</button>
-            <button>Green Living</button>
-        </article>
-
-        <article>
-            <button>Eco Friendly</button>
-        </article>
-    </div>
+  <!-- Score -->
+  <div class="card center">
+    <h3>Your Score</h3>
+    <p class="score">98</p>
+    <p>8 Day Streak 🔥</p>
+  </div>
 
 </section>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="./phantom.js"></script>
+
 </body>
 </html>
